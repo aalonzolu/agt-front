@@ -1,0 +1,20 @@
+
+  <div class="form-group nav">
+<input type="search"  class="form-control" placeholder="Buscar anime" ng-change="schanged()" ng-model="buscar.termino" autofocus>
+  </div>
+
+
+
+
+<div class="container-fluid">
+<h1>Resultados de: {{buscar.termino}}</h1>
+  <div class="row">
+	<div class="col-md-3 image" ng-repeat="item in elementos">
+		<a class="link" href="#{{item.anime_url}}" ><img ng-src="{{item.img}}" class="img-responsive img-thumbnail"/>
+		<p> <span>{{normalizar(item.anime_title)}}</span></p>
+</a>
+	</div>
+  </div>
+</div>
+
+

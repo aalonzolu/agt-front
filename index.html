@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="AnimeGT">
+
+<head>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- build:css css/app.css -->
+	<link rel="stylesheet" href="assets/css/site.css" />
+	<!-- endbuild -->
+
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+	<link rel='stylesheet' href='lib/angular-loading-bar/loading-bar.min.css' type='text/css' media='all' />
+
+	<title>AnimeGT.net - Anime online de alta calidad gratis.</title>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=389612597871488";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+</head>
+
+<body>
+
+
+	<div class="flexbox-parent">
+
+		<div class="fill-area content flexbox-item-grow">
+			<aside class="toolbar">
+				<a href="#/home" class="link" ><i class="fa fa-home"></i></a>
+				<a href="#/nuevos" class="link" ><i class="fa fa-plus-square"></i></a>
+				<a href="#/populares" class="link" ><i class="fa fa-fire"></i></a>
+				<a href="#/generos" class="link" ><i class="fa fa-th"></i></a>
+				<a href="#/buscar" class="link" ><i class="fa fa-search"></i></a>
+			</aside>
+			<aside class="flexbox-item-grow sidebar" style="display:none;">
+				<div class="container-fluid">
+				  <div class="row">
+					<div class="col-md-12">
+						<input type="text" class="form-control sidebar" placeholder="Buscar ">
+					</div>
+				  </div>
+				</div>
+			</aside>
+			<div class="flexbox-item-grow main">
+				<div class="main-header">
+					<div class="pull-left">AnimeGT.net</div>
+					<div class="icons text-right pull-right">
+					</div>
+				</div>
+				<div class="main-body">
+					 <ng-view></ng-view> 
+
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="pull-left app-git">
+				Creado por: Equipo AnimeGT -- AVISO: Ning&uacute;n video ni imagen se aloja en nuestro servidor, solo servimos videos mostrados en otros sitios como AnimeFLV, AnimeYT, JKAnime, etc.
+			</div>
+		</footer>
+	</div>
+
+<script src="https://content.jwplatform.com/libraries/PymYfrFv.js"> </script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script type="text/javascript" src="lib/ng-jwplayer/jwplayer.min.js"></script>
+<script type="text/javascript" src="lib/angular-loading-bar/loading-bar.min.js"></script>
+<script src="assets/js/app.js" ></script>
+<script src="assets/js/controllers/AppCtrl.js" ></script>
+<script src="assets/js/controllers/ComponentsCtrl.js" ></script>
+
+</body>
+
+</html>

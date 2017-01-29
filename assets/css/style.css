@@ -1,0 +1,28 @@
+.image { 
+   position: relative; 
+   margin-bottom: 20px;
+}
+
+.image p { 
+	position: absolute;
+	bottom: -12px;
+	left: 14px;
+	width: 202px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	height: 80px;
+	padding: 5px;
+	text-align: center;
+}
+.image p span { 
+   color: white; 
+   font: bold 14px/10px Helvetica, Sans-Serif;
+   letter-spacing: -1px;   
+}
+.image p span.spacer {
+   padding:0 5px;
+}
+.link {
+color: white;
+text-decoration: none;
+}

@@ -1,0 +1,31 @@
+
+
+<div class="container-fluid">
+<h1>Genero {{normalizar(genero)}}</h1>
+
+<div class="row">
+<a class="btn btn-primary btn-lg" href="#/generos"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Generos</a>
+<button type="button" class="btn btn-danger btn-lg" ng-click="prevPage()">Atras</button>
+<button type="button" class="btn btn-danger btn-lg" disabled>{{page}}</button>
+<button type="button" class="btn btn-danger btn-lg" ng-click="nextPage()">Siguiente</button>
+</div>
+<hr>
+  <div class="row">
+	<div class="col-md-3 image" ng-repeat="item in elementos">
+		<a class="link" href="#{{item.anime_url}}" ><img ng-src="{{item.img}}" class="img-responsive img-thumbnail"/>
+		<p> <span>{{normalizar(item.anime_title)}}</span></p>
+</a>
+	</div>
+  </div>
+<hr>
+<div class="row">
+<a class="btn btn-primary btn-lg" href="#/generos"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Generos</a>
+
+<button type="button" class="btn btn-danger btn-lg" ng-click="prevPage()">Atras</button>
+<button type="button" class="btn btn-danger btn-lg" disabled>{{page}}</button>
+<button type="button" class="btn btn-danger btn-lg" ng-click="nextPage()">Siguiente</button>
+</div>
+<!-- nextPage() -->
+</div>
+
+

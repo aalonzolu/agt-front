@@ -1,0 +1,32 @@
+{
+  "name": "ng-jwplayer",
+  "version": "0.2.3",
+  "main": "jwplayer.js",
+  "ignore": [
+    "src",
+    "node_modules",
+    "bower_components",
+    "index1.html",
+    "index2.html",
+    ".bowerrc",
+    ".gitignore",
+    "bower.json",
+    "gulpfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": "^1.4.2"
+  },
+  "homepage": "https://github.com/ampervue/ngJWPlayer",
+  "_release": "0.2.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.3",
+    "commit": "549902efd5a2c5ec30c8b5e5d16c6a6335dd9790"
+  },
+  "_source": "https://github.com/ampervue/ngJWPlayer.git",
+  "_target": "^0.2.3",
+  "_originalSource": "ng-jwplayer",
+  "_direct": true
+}

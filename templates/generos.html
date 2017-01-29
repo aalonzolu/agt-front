@@ -1,0 +1,17 @@
+
+
+
+
+
+<div class="container-fluid">
+<h1>Generos</h1>
+  <div class="row">
+	<div class="col-md-3" ng-repeat="item in generos" style="padding: 10px;">
+		<a class="btn btn-danger btn-lg btn-block" href="#/generos/{{item.link}}/1" >
+<!--<img ng-src="{{item.img}}" class="img-responsive img-thumbnail"/> -->
+		<p> <span>{{normalizar(item.name)}}</span></p>
+</a>
+	</div>
+  </div>
+</div>
+

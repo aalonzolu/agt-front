@@ -1,0 +1,36 @@
+
+<div class="container-fluid">
+<a class="btn btn-primary btn-lg" href="javascript:window.history.back();"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Atras</a>
+<h1>Anime {{normalizar(anime.title)}} </h1>
+  <div class="row">
+	<div class="col-md-12">
+
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="{{anime.img}}" alt="{{normalizar(anime.title)}} ">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{normalizar(anime.title2)}} </h4>
+<p>{{normalizar(anime.description)}}</p>
+  </div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Episodios</div>
+  <div class="panel-body">
+<!-- listado de episodios -->
+<div class="list-group">
+  <a href="#{{item.url}}" class="list-group-item" ng-repeat="item in anime.capitulos" >{{normalizar(item.title)}}</a>
+</div>
+<!-- fin listado de episodios -->
+  </div>
+</div>
+
+	</div>
+  </div>
+</div>
+
+
