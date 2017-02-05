@@ -3,13 +3,13 @@ app.controller('WelcomeCtrl', function ($scope, $routeParams,MyFunctions) {
   $scope.normalizar  = function(texto){
     return MyFunctions.utf8_decode(texto);
   }
-  
+
 });
 app.controller('HomeCtrl', function ($scope, $routeParams,MyFunctions) {
   $scope.normalizar  = function(texto){
     return MyFunctions.utf8_decode(texto);
   }
-  
+
 });
 
 app.controller('NuevosCtrl', function ($scope, $routeParams, $http,MyFunctions) {
@@ -17,7 +17,7 @@ app.controller('NuevosCtrl', function ($scope, $routeParams, $http,MyFunctions) 
     return MyFunctions.utf8_decode(texto);
   }
 
-  $http.get("http://api.animegt.net/new")
+  $http.get("https://api.animegt.net/new")
   .then(function(response) {
       $scope.nuevos = response.data;
 
@@ -30,7 +30,7 @@ app.controller('PopularesCtrl', function ($scope, $routeParams,$http,MyFunctions
     return MyFunctions.utf8_decode(texto);
   }
 
-  $http.get("http://api.animegt.net/popular")
+  $http.get("https://api.animegt.net/popular")
   .then(function(response) {
       $scope.populares = response.data;
   });
@@ -45,8 +45,8 @@ app.controller('VerCtrl', function ($scope, $routeParams, $http,$sce,
   $scope.normalizar  = function(texto){
     return MyFunctions.utf8_decode(texto);
   }
-  $scope.aurl = $routeParams.aurl;
-  var url = "http://api.animegt.net/Ver/"+$routeParams.id+"/"+$routeParams.aurl+"/"+$routeParams.eurl+"/";
+  var url = "https://api.animegt.net/Ver/"+$routeParams.id+"/"+$routeParams.aurl+"/"+$routeParams.eurl+"/";
+  $scope.url = url;
   $scope.name = 'AnimeGT Player';
 
    $scope.options = {
@@ -69,7 +69,8 @@ app.controller('AnimeCtrl', function ($scope, $routeParams,$http,$sce,MyFunction
   $scope.normalizar  = function(texto){
     return MyFunctions.utf8_decode(texto);
   }
-  var url = "http://api.animegt.net/Anime/"+$routeParams.id+"/"+$routeParams.aurl+"/";
+  var url = "https://api.animegt.net/Anime/"+$routeParams.id+"/"+$routeParams.aurl+"/";
+  $scope.url = url;
   $http.get(url)
   .then(function(response) {
       $scope.anime = response.data;
@@ -107,7 +108,7 @@ app.controller('GeneroCtrl', function ($scope, $routeParams,$http,$sce,MyFunctio
 {"link":"seinen","name":"Seinen"},{"link":"shojo","name":"Shojo"},{"link":"shojo-ai","name":"Shojo Ai"},{"link":"shonen","name":"Shonen"},{"link":"short","name":"Short"},{"link":"shounen-ai","name":"Shounen Ai"},{"link":"sobrenatural","name":"Sobrenatural"},{"link":"space","name":"Space"},{"link":"super-power","name":"Super Power"},{"link":"Thriller","name":"Thriller"},{"link":"vampiros","name":"Vampiros"},{"link":"yuri","name":"Yuri"}];
 
 $scope.getData = function(page){
-    var url = "http://api.animegt.net/genere/"+$routeParams.genero+"/"+page;
+    var url = "https://api.animegt.net/genere/"+$routeParams.genero+"/"+page;
     $http.get(url)
     .then(function(response) {
         //$scope.elementos = response.data.results;
@@ -159,7 +160,7 @@ app.controller('BuscarCtrl', function ($scope, $routeParams, $http,$sce,MyFuncti
    $scope.elementos = [];
 
 $scope.getData = function(query){
-    var url = "http://api.animegt.net/search/"+query
+    var url = "https://api.animegt.net/search/"+query
     $http.get(url)
     .then(function(response) {
         //$scope.elementos = response.data.results;

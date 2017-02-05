@@ -3,11 +3,9 @@
 <h1>Capitulos populares</h1>
   <div class="row">
 	<div class="col-md-3 image" ng-repeat="item in populares">
-		<a class="link" href="#/{{item.anime_url}}" ><img ng-src="{{item.img}}" class="img-responsive img-thumbnail"/>
+		<a class="link" href="#{{item.episode_url}}" ><img ng-src="{{item.img}}" class="img-responsive img-thumbnail"/>
 		<p> <span>{{normalizar(item.anime_title)}} - {{normalizar(item.episode_title)}}</span></p>
 </a>
 	</div>
   </div>
 </div>
-
-

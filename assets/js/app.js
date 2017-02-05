@@ -4,8 +4,8 @@ var app = angular.module('AnimeGT', ["ngRoute",'ng-jwplayer','angular-loading-ba
 app.config(function($routeProvider) {
   $routeProvider
   .when("/", {
-    templateUrl : "templates/welcome.html",
-    controller : "WelcomeCtrl"
+    templateUrl : "templates/nuevos.html",
+    controller : "NuevosCtrl"
   })
   .when("/home", {
     templateUrl : "templates/home.html",
