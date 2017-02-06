@@ -1,5 +1,5 @@
 
-var app = angular.module('AnimeGT', ["ngRoute",'ng-jwplayer','angular-loading-bar']);
+var app = angular.module('AnimeGT', ["ngRoute",'ng-jwplayer','angular-loading-bar','angular-google-adsense']);
 
 app.config(function($routeProvider) {
   $routeProvider
